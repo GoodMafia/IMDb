@@ -1,0 +1,68 @@
+.parent2{
+    display: flex;
+
+}
+.column2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background:  #EA4737;
+    width: 35px;
+    height: 368px;
+.column-title{
+    font-family: 'Alex Brush';
+    display: flex;
+    align-items: center;
+    rotate: -0.25turn;
+    white-space: nowrap;
+    width: 35px;
+    color: #fff;
+    font-size: 19px;
+    line-height: 20px;
+    letter-spacing: 10px;
+    margin-top: 160px;
+}
+
+}
+
+.filmDescription{
+    background-color: #07131B;
+    padding-top: 16px;
+    padding-left: 52px;
+    padding-bottom: 10px;
+    padding-right: 60px;
+}
+
+.up{ 
+    display: flex;
+}
+
+.title{
+    color: white;
+    font-size: 24px;
+}
+.info{
+    padding-left: 25px;
+}
+
+#info-title{
+    display: flex;
+    width: 299px;
+    justify-content: space-between;
+    padding-top: 21px;
+    
+}
+span{
+    padding-left: 25px;
+    color: white;
+}
+
+.info-p{
+    color: #70B0FF;
+}
+
+.downText{
+    color: white;
+    width: 470px;
+    padding-top: 16px;
+}

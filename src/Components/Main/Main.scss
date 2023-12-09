@@ -1,0 +1,106 @@
+.parent1 {
+  display: flex;
+  justify-content: space-between;
+
+  margin: auto;
+}
+
+.preview-img {
+  width: 263px;
+  height: 368px;
+}
+
+.container1 {
+  max-width: 1230px;
+  margin: auto;
+}
+main {
+  position: relative;
+}
+
+.films {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #2998e2;
+  width: 35px;
+  height: 368px;
+  .playing {
+    display: flex;
+    align-items: center;
+    rotate: -0.25turn;
+    white-space: nowrap;
+    width: 35px;
+    color: #fff;
+    font-family: "Abhaya Libre";
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 8.550000190734863px;
+    margin-top: 120px;
+  }
+}
+
+.wrapper{
+  background: rgba(235, 54, 54, 0.8);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 34px;
+  color: white;
+  transition: 0.5s;
+}
+
+.whole-block, .whole-block2, .whole-block3, .whole-block4, .whole-block5{ 
+  position: absolute;
+  top: 0;
+  left: 35px;
+  width: 263px;
+
+  transition: 1s;
+  // display: none;
+  // opacity: 0;
+  // visibility: hidden;
+}
+
+.whole-block2{
+  left: 302px;
+}
+
+.whole-block3{
+  left: 569px;
+}
+
+.whole-block4{
+  left: 836px;
+}
+
+.whole-block5{
+  left: 1103px;
+}
+
+
+.wrapper:hover{
+  background-color: rgba(255, 255, 255, 0.3733);
+}
+
+.next{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 169px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+
+
