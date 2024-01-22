@@ -51,7 +51,18 @@ export default function Trailers() {
               </p>
             </div>
           </div>
-          <div className="filmTrailer"></div>
+          
+          </div>
+          <div className="filmTrailer">
+            <iframe
+              width="720"
+              height="368"
+              src="https://www.youtube.com/embed/v71ce1Dqqns?si=JXzB6DicRmG-JUr6"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
         </div>
       </div>
     </>

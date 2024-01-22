@@ -1,0 +1,81 @@
+.componentClass {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 362px;
+}
+
+.headLink {
+  text-decoration: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #4a90e2;
+  font-family: Actor;
+  font-size: 16px;
+}
+
+.headLink:hover {
+  color: black;
+  transition: 0.5s;
+}
+
+#right {
+  border-right: 2px #dcdcdc solid;
+}
+
+.title-news {
+  font-size: 21px;
+  font-family: Actor;
+  color: #343434;
+}
+
+.News {
+  display: flex;
+  gap: 20px;
+  width: 382px;
+  padding-top: 10px;
+}
+
+.newsTitle {
+  width: 230px;
+  font-family: Actor;
+  font-size: 18px;
+  color: #343434;
+}
+.newsInfo {
+  font-family: Actor;
+  font-size: 14px;
+  color: #343434;
+}
+
+.limitWidth {
+  display: flex;
+  gap: 2px;
+  width: 408px;
+  padding-top: 10px;
+}
+
+.label {
+  color: #4a90e2;
+  font-family: Actor;
+  font-size: 14px;
+}
+.downBlock {
+  padding-top: 10px;
+}
+
+.wrapperBlock {
+  padding-top: 10px;
+}
+
+#additionalPadding {
+  padding-top: 10px;
+}

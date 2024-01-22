@@ -1,31 +1,60 @@
-.parent{
-    width: 1330px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.parent {
+  width: 1330px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.link{
-    display: inline-block;
-    padding: 30px;
-    font-family: 'Actor';
-    font-size: 16px;
-    font-weight: 400;
-    transition: 0.5s;
-    color: #000000B2;
-    
+.link {
+  display: inline-block;
+  padding: 30px;
+  font-family: "Actor";
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.5s;
+  color: #000000b2;
 }
 
-.link:hover{
-    background-color: #EA4737;
-    color: white;
+.link:hover {
+  background-color: #ea4737;
+  color: white;
 }
 
-.search-icon{
-    padding-right: 26px;
+.search-icon {
+  padding-right: 26px;
 }
 
-.container{
-    max-width: 1330px;
-    margin: auto;
-  }
+.container {
+  max-width: 1330px;
+  margin: auto;
+}
+
+.searchBtn {
+  background: transparent;
+  border: none;
+}
+.searchInp {
+  font-family: "Actor";
+  color: #999999;
+  width: 150px;
+  margin-right: 30px;
+  margin-left: 0px;
+  padding-left: 0px;
+  transition: 0.8s;
+  border-bottom: 2px solid #999999;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  background-color: transparent;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.flexJustify {
+  display: flex;
+  align-items: center;
+}
+.searchInp:focus {
+  outline: none;
+}

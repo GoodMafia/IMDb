@@ -1,27 +1,26 @@
 .parent1 {
   display: flex;
   justify-content: space-between;
-
+  gap: 0;
   margin: auto;
 }
 
 .preview-img {
-  width: 263px;
+  width: 262px;
   height: 368px;
 }
 
 .container1 {
-  max-width: 1230px;
+  max-width: 1280px;
   margin: auto;
 }
 main {
   position: relative;
 }
 
-.films {
-  display: flex;
-  justify-content: space-between;
-  gap: 4px;
+.none{
+  visibility: none;
+  opacity: 0;
 }
 
 .column {
@@ -47,60 +46,47 @@ main {
   }
 }
 
-.wrapper{
+.wrapper {
   background: rgba(235, 54, 54, 0.8);
   text-align: center;
   padding-top: 30px;
   padding-bottom: 34px;
   color: white;
   transition: 0.5s;
+  display: none;
+  visibility: hidden;
 }
 
-.whole-block, .whole-block2, .whole-block3, .whole-block4, .whole-block5{ 
-  position: absolute;
-  top: 0;
-  left: 35px;
-  width: 263px;
+.whole-block,
+.whole-block2,
+.whole-block3,
+.whole-block4,
+.whole-block5 {
+  width: 262px;
 
   transition: 1s;
-  // display: none;
-  // opacity: 0;
-  // visibility: hidden;
 }
 
-.whole-block2{
-  left: 302px;
-}
-
-.whole-block3{
-  left: 569px;
-}
-
-.whole-block4{
-  left: 836px;
-}
-
-.whole-block5{
-  left: 1103px;
-}
-
-
-.wrapper:hover{
+.wrapper:hover {
   background-color: rgba(255, 255, 255, 0.3733);
 }
 
-.next{
+.next {
   position: absolute;
   top: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 169px 15px;
+  padding: 169px 20px;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
-
-
-
-
+.positionClass {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+   top: 0;
+  
+ 
+}
