@@ -21,6 +21,15 @@ export default function Header() {
       setIsHover(false);
     }
 
+    const activeInputStyle = {
+        width: '150px',
+        display: 'block'
+    }
+
+    const passiveInputStyle = {
+      width: '0'
+    }
+
   return (
     <header>
       <div className="container parent">
@@ -35,8 +44,8 @@ export default function Header() {
           <a href="#" className="link">DVD & Blu-Ray</a>
         </div>
         <div className='flexJustify' onMouseLeave={() => noHover()}>
+        <div className="searchBlock"><input className="searchInp" type="text" style={isHover === true ? activeInputStyle : passiveInputStyle }/></div>
           <button className="searchBtn" onMouseEnter={() => onHover()}><img className="search-icon" src={SearchImg} alt="img" /></button>
-          { isHover && <div className="searchBlock"><input className="searchInp" type="text" /></div>}
           <img src={UserLogo} alt="img" />
         </div>
       </div>

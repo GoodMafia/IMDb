@@ -1,9 +1,13 @@
+
+.border{
+  border-bottom: 2px solid #dcdcdc;
+}
 .componentClass {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 2px solid #dcdcdc;
+
 }
 
 .head {
@@ -13,22 +17,25 @@
   width: 362px;
 }
 
+
 .headLink {
+  display: inline-block;
   text-decoration: none;
   padding-left: 8px;
   padding-right: 8px;
   color: #4a90e2;
   font-family: Actor;
   font-size: 16px;
+  cursor: pointer
 }
 
-.headLink:hover {
-  color: black;
-  transition: 0.5s;
-}
 
 #right {
   border-right: 2px #dcdcdc solid;
+}
+
+.active {
+   color: black
 }
 
 .title-news {
@@ -50,6 +57,7 @@
   font-size: 18px;
   color: #343434;
 }
+
 .newsInfo {
   font-family: Actor;
   font-size: 14px;
@@ -68,6 +76,7 @@
   font-family: Actor;
   font-size: 14px;
 }
+
 .downBlock {
   padding-top: 10px;
 }
@@ -78,4 +87,12 @@
 
 #additionalPadding {
   padding-top: 10px;
+}
+
+.tab{
+  display: none;
+}
+
+.tab-active {
+  display: block;
 }

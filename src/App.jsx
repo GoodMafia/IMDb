@@ -9,6 +9,7 @@ import Header from './Components/Header/Header'
 import Main from './Components/Main/Main'
 import Trailers from './Components/Trailers/Trailers'
 import RecentlyViewed from './Components/RecentlyViewed/RecentlyViewed'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Trailers/>
       <ThreeBlocks/>
       <RecentlyViewed/>
+      <Footer/>
     </>
   )
 }

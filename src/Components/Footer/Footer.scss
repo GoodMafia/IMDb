@@ -1,0 +1,117 @@
+footer {
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+.everywhere {
+  width: 400px;
+}
+.everywhere-title {
+  font-family: Actor;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: #2a2a2a;
+}
+.platforms {
+  padding-top: 16px;
+  padding-left: 10px;
+}
+.down-Text {
+  color: #343434;
+  font-family: Actor;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.mobileSite {
+  display: inline-block;
+  margin-top: 25px;
+  font-family: Actor;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #4a90e2;
+}
+.flexParentWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.followUs {
+  width: 200px;
+}
+
+.imgFlex {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.flickGallery {
+  width: 200px;
+}
+.additional {
+  gap: 3px;
+}
+.footer-link {
+  display: inline-block;
+  font-family: Actor;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #4a90e2;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.manyLinks {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.companyLogo {
+  font-family: Actor;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000cb;
+  display: flex;
+  align-items: center;
+}
+
+.logoAmazon {
+  display: inline-block;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.copyright-text {
+  color: #000;
+  font-family: Actor;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+}
+
+.amazonCompany{
+    padding-top: 32px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
