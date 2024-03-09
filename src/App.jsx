@@ -1,10 +1,11 @@
-import { getAuth } from 'firebase/auth'
+import { getAuth, signOut } from 'firebase/auth'
 import { useState } from 'react'
 import {
 	NavLink,
 	Route,
 	BrowserRouter as Router,
 	Routes,
+	useNavigate
 } from 'react-router-dom'
 import Footer from './Components/Footer/Footer'
 import './css/App.scss'
@@ -17,15 +18,19 @@ import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import Search from './pages/Search/Search.jsx'
 import panelSearch from './img/search-3-xxl.png'
+import Error404 from './pages/Error404/Error404.jsx'
+
 
 function App() {
-	// const navigate = useNavigate()
+	const navigate = useNavigate()
 	const auth = getAuth()
 	const [user, setUser] = useState(null)
-	// function SignOut() {
-	// 	signOut(auth)
-	// 	useNavigate('/login')
-	// }
+	function signOutRender() {
+		signOut(auth)
+		setUser(null)
+		navigate('/login')
+
+	}
 
 	const [isVisible, setIsVisible] = useState(false)
 	const [regulate, setRegulate] = useState(true)
@@ -36,23 +41,32 @@ function App() {
 	}
 
 	return (
-		<Router>
+		<>
 			<header>
 				<div>
 					<div className='container parent'>
-						{ regulate && <button className='burger invisible' onClick={() => togglePanel()}>
-							<img src={BurgerButton} className='burger-img' />
-						</button>}
+						{regulate && (
+							<button
+								className='burger invisible'
+								onClick={() => togglePanel()}
+							>
+								<img src={BurgerButton} className='burger-img' />
+							</button>
+						)}
 						<div className={`leftPanel ${isVisible ? '' : 'strictInvisible'}`}>
 							<button onClick={() => togglePanel()} className='burger white'>
 								X
 							</button>
 							{user ? (
-								<button className='user-email'>{user.email}</button>
+								<button onClick={() => signOutRender()} className='user-email'>{user.email}</button>
 							) : (
 								// Если пользователя нет, показываем ссылку на регистрацию
 								<NavLink to='/register'>
-									<img className='profileLogo inPanel' src={UserLogo} alt='img' />
+									<img
+										className='profileLogo inPanel'
+										src={UserLogo}
+										alt='img'
+									/>
 								</NavLink>
 							)}
 							<NavLink to='/search' className='searchBtn'>
@@ -98,10 +112,10 @@ function App() {
 								<img className='search-icon' src={SearchImg} alt='img' />
 							</NavLink>
 							{user ? (
-								<button className='user-email forAdaptive'>{user.email}</button>
+								<button onClick={() => signOutRender()} className='user-email forAdaptive'>{user.email}</button>
 							) : (
 								// Если пользователя нет, показываем ссылку на регистрацию
-								<NavLink  className="forAdaptive" to='/register'>
+								<NavLink className='forAdaptive' to='/register'>
 									<img className='profileLogo' src={UserLogo} alt='img' />
 								</NavLink>
 							)}
@@ -110,6 +124,7 @@ function App() {
 				</div>
 			</header>
 			<Routes>
+				<Route path='*' element={<Error404/>}></Route>
 				<Route path='/' element={<FullPage />}></Route>
 				<Route path='/search' element={<Search />}></Route>
 				<Route
@@ -119,7 +134,7 @@ function App() {
 				<Route path='/login' element={<Login setUser={setUser} />}></Route>
 			</Routes>
 			<Footer />
-		</Router>
+		</>
 	)
 }
 
