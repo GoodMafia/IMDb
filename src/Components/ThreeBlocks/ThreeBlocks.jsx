@@ -18,6 +18,12 @@ import Sense8 from "../../img/Sense8.png";
 import StrangerThings from "../../img/StrangerThings.png";
 import SuicideSquad from "../../img/SuicideSquad.png";
 import StarTrekBeyond from "../../img/StarTrekBeyond.png";
+import BlackPanter from "../../img/BlackPanter.jpg";
+import Avengers from '../../img/avengers.jpg';
+import SpiderMan from "../../img/SpiderMan.jpg";
+import StackTV from "../../img/StackTV.png";
+import Youtube from "../../img/YoutubeTV.jpg";
+import PopularTV from "../../img/PopularTV.jpg";
 
 export default function ThreeBlocks() {
   const [toggleState, setToggleState] = useState(1);
@@ -27,7 +33,7 @@ export default function ThreeBlocks() {
   };
 
   return (
-    <div className="border">
+
       <div className="container componentClass">
         <div className="wrapperComponent">
           <div className="lastNews">
@@ -51,19 +57,11 @@ export default function ThreeBlocks() {
                   Movies
                 </div>
                 <div
-                  id="right"
                   href="#"
                   className={toggleState === 3 ? "headLink active" : "headLink"}
                   onClick={() => toggleTab(3)}
                 >
                   TV
-                </div>
-                <div
-                  href="#"
-                  className={toggleState === 4 ? "headLink active" : "headLink"}
-                  onClick={() => toggleTab(4)}
-                >
-                  Celebs
                 </div>
               </div>
             </div>
@@ -71,7 +69,7 @@ export default function ThreeBlocks() {
           <div className="tabs">
             <div className={toggleState === 1 ? "tab tab-active" : "tab"}>
               <div className="News">
-                <img src={JaredJeto} alt="" />
+                <img className="imageSizeTab" src={JaredJeto} alt="" />
                 <div>
                   <p className="newsTitle">
                     Jared Leto Joins Blade Runner Sequel
@@ -84,7 +82,7 @@ export default function ThreeBlocks() {
               </div>
 
               <div className="News">
-                <img src={Godzilla} alt="" />
+                <img className="imageSizeTab" src={Godzilla} alt="" />
                 <div>
                   <p className="newsTitle">
                     Toho to Produce First Godzilla Animation Movie
@@ -96,7 +94,7 @@ export default function ThreeBlocks() {
                 </div>
               </div>
               <div className="News">
-                <img src={American} alt="" />
+                <img className="imageSizeTab" src={American} alt="" />
                 <div>
                   <p className="newsTitle">
                     Watch Mysterious New American Horror Story Trailer
@@ -110,117 +108,72 @@ export default function ThreeBlocks() {
             </div>
             <div className={toggleState === 2 ? "tab tab-active" : "tab"}>
               <div className="News">
-                <img src={JaredJeto} alt="" />
+                <img className="imageSizeTab" src={SpiderMan} alt="" />
                 <div>
                   <p className="newsTitle">
-                    Jared Leto Joins Blade Runner Sequel
+                    New Film of Spider Man is coming soon
                   </p>
                   <p className="newsInfo">
-                    Jared Leto has joined the upcoming “Blade Runner” sequel,
-                    TheWrap has learned.
+                    Producers have revealed the details of the new part of Spider Man
                   </p>
                 </div>
               </div>
 
               <div className="News">
-                <img src={Godzilla} alt="" />
+                <img className="imageSizeTab" src={BlackPanter} alt="" />
                 <div>
                   <p className="newsTitle">
-                    Toho to Produce First Godzilla Animation Movie
+                  New Film of Black Panther is coming soon
                   </p>
                   <p className="newsInfo">
-                    Tokyo – Japans movie giant, Toho has announced the
-                    production of a feature-length Godzilla animation.
+                  Producers have revealed the details of the new part of BlackPanter
                   </p>
                 </div>
               </div>
               <div className="News">
-                <img src={American} alt="" />
+                <img className="imageSizeTab" src={Avengers} alt="" />
                 <div>
                   <p className="newsTitle">
-                    Watch Mysterious New American Horror Story Trailer
+                    The final part of Avengers will be released this year
                   </p>
                   <p className="newsInfo">
-                    Leave it to Ryan Murphy and his team from FX terrifying
-                    American Horror Story to keep fans.
+                  Producers have revealed the details of the final part of Avengers
                   </p>
                 </div>
               </div>
             </div>
             <div className={toggleState === 3 ? "tab tab-active" : "tab"}>
               <div className="News">
-                <img src={JaredJeto} alt="" />
+                <img className="imageSizeTab" src={StackTV} alt="" />
                 <div>
                   <p className="newsTitle">
-                    Jared Leto Joins Blade Runner Sequel
+                    StackTV announced a new pack of channels in 2024
                   </p>
                   <p className="newsInfo">
-                    Jared Leto has joined the upcoming “Blade Runner” sequel,
-                    TheWrap has learned.
+                    The official representative of StackTV shared ous new information about channels in 2024
                   </p>
                 </div>
               </div>
 
               <div className="News">
-                <img src={Godzilla} alt="" />
+                <img className="imageSizeTab" src={Youtube} alt="" />
                 <div>
                   <p className="newsTitle">
-                    Toho to Produce First Godzilla Animation Movie
+                    YoutubeTV is coming soon in 2024
                   </p>
                   <p className="newsInfo">
-                    Tokyo – Japans movie giant, Toho has announced the
-                    production of a feature-length Godzilla animation.
+                    Youtube is going to create separate channels pack which will be called Youtube TV
                   </p>
                 </div>
               </div>
               <div className="News">
-                <img src={American} alt="" />
+                <img className="imageSizeTab" src={PopularTV} alt="" />
                 <div>
                   <p className="newsTitle">
-                    Watch Mysterious New American Horror Story Trailer
+                    We got a list of the most popular TV channel in 2023
                   </p>
                   <p className="newsInfo">
-                    Leave it to Ryan Murphy and his team from FX terrifying
-                    American Horror Story to keep fans.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className={toggleState === 4 ? "tab tab-active" : "tab"}>
-              <div className="News">
-                <img src={JaredJeto} alt="" />
-                <div>
-                  <p className="newsTitle">
-                    Jared Leto Joins Blade Runner Sequel
-                  </p>
-                  <p className="newsInfo">
-                    Jared Leto has joined the upcoming “Blade Runner” sequel,
-                    TheWrap has learned.
-                  </p>
-                </div>
-              </div>
-
-              <div className="News">
-                <img src={Godzilla} alt="" />
-                <div>
-                  <p className="newsTitle">
-                    Toho to Produce First Godzilla Animation Movie
-                  </p>
-                  <p className="newsInfo">
-                    Tokyo – Japans movie giant, Toho has announced the
-                    production of a feature-length Godzilla animation.
-                  </p>
-                </div>
-              </div>
-              <div className="News">
-                <img src={American} alt="" />
-                <div>
-                  <p className="newsTitle">
-                    Watch Mysterious New American Horror Story Trailer
-                  </p>
-                  <p className="newsInfo">
-                    Leave it to Ryan Murphy and his team from FX terrifying
-                    American Horror Story to keep fans.
+                    The Forbes shared ous the list of the most popular TV programms and channels in 2023
                   </p>
                 </div>
               </div>
@@ -295,6 +248,6 @@ export default function ThreeBlocks() {
           </div>
         </div>
       </div>
-    </div>
+
   );
 }

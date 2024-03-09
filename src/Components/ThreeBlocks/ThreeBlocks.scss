@@ -7,6 +7,7 @@
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
+  flex-wrap: wrap;
 
 }
 
@@ -95,4 +96,8 @@
 
 .tab-active {
   display: block;
+}
+.imageSizeTab{
+  width: 139px;
+  height: 102px;
 }

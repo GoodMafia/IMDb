@@ -15,10 +15,18 @@ import Sense8 from "../../img/Sense8.png";
 import Man from "../../img/Man.png";
 import Woman from "../../img/Woman.png";
 import GumpHappens from "../../img/GumpHappens.png";
+import SpiderMan from "../../img/SpiderMan.jpg"
+import BlackPanther from "../../img/BlackPanter.jpg"
+import Avengers from "../../img/avengers.jpg"
+import StackTV from "../../img/StackTV.png"
+import Youtube from "../../img/YoutubeTV.jpg"
+import PopularTV from "../../img/PopularTV.jpg"
+
 
 export default function RecentlyViewed() {
   return (
     <div className="border">
+      
       <div className="recentlyViewed container">
         <p className="title-news">Recently Viewed</p>
         <div className="manyImages">
@@ -37,6 +45,12 @@ export default function RecentlyViewed() {
           <img className="exactSize" src={Godzilla} alt="" />
           <img className="exactSize" src={Man} alt="" />
           <img className="exactSize" src={Cynthia} alt="" />
+          <img className="exactSize" src={SpiderMan} alt="" />
+          <img className="exactSize" src={BlackPanther} alt="" />
+          <img className="exactSize" src={Avengers} alt="" />
+          <img className="exactSize" src={StackTV} alt="" />
+          <img className="exactSize" src={Youtube} alt="" />
+          <img className="exactSize" src={PopularTV} alt="" />
         </div>
       </div>
     </div>

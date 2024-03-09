@@ -6,7 +6,7 @@ import JasonBourne from "../../img/JasonBourne.png";
 
 export default function Trailers() {
   return (
-    <>
+    
       <div className="parent2">
         <div className="column2">
           <p className="column-title">TRAILERS</p>
@@ -65,6 +65,6 @@ export default function Trailers() {
             ></iframe>
         </div>
       </div>
-    </>
+    
   );
 }

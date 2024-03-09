@@ -1,9 +1,16 @@
 .recentlyViewed{
     padding-top: 30px;
     padding-bottom: 30px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .exactSize{
     width: 80px;
     height: 112px;
+}
+
+.title-news{
+    padding-left: 40px;
 }

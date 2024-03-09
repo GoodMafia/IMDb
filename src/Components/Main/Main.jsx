@@ -37,9 +37,7 @@ export default function Main() {
         
       </div>
 
-      <button className="next">
-        <img src={Shape} alt="img" />
-      </button>
+
     </main>
   );
 }
