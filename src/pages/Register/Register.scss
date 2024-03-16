@@ -1,80 +1,88 @@
 .formContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-  }
-  
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: #f5f5f5; /* Светло-серый фон */
+  width: 100%; /* Делаем блок на всю ширину экрана */
+}
+
 .form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-  }
-  
-  .form h2 {
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .form-group label {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: #999;
-    transition: all 0.3s ease;
-    pointer-events: none;
-  }
-  
-  .form-group input:focus + label,
-  .form-group input:not(:placeholder-shown) + label {
-    top: 10px;
-    left: 5px;
-    font-size: 12px;
-    color: #333;
-  }
+  width: 80%; /* Увеличиваем ширину формы */
+  max-width: 600px; /* Максимальная ширина формы */
+  padding: 40px;
+  background-color: #fff; /* Белый фон */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+.form h2 {
+  margin-bottom: 30px;
+  color: #333; /* Темно-серый цвет */
+  text-align: center;
+}
 
-  .error-text{
-    color: red;
-    text-align: center;
-  }
-  
-  .link-text{
-    display: block;
-    text-align: center;
-  }
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
 
-  .submit-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .submit-btn:active {
-    transform: translateY(1px);
-  }
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc; /* Светло-серая граница */
+  outline: none;
+  background-color: transparent;
+}
+
+.form-group label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 16px;
+  color: #666; /* Серый цвет */
+  transition: 0.3s;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label {
+  top: -15px;
+  font-size: 12px;
+  color: #009688; /* Зеленый цвет при фокусе или заполнении */
+}
+
+.error-text {
+  color: #ff5722; /* Цвет ошибки - оранжевый */
+  margin-top: 10px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #009688; /* Зеленый цвет */
+  color: #fff; /* Белый цвет текста */
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #00796b; /* Темный зеленый при наведении */
+}
+
+.link-text {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #009688; /* Зеленый цвет */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link-text:hover {
+  color: #00796b; /* Темный зеленый при наведении */
+}

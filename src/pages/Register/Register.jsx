@@ -8,6 +8,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 
 
+
 export default function Register(props) {
 
   const [name, setName] = useState("");

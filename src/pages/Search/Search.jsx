@@ -42,6 +42,7 @@ export default function Search() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Your request here"
+          className="typeText"
         />
         <button type="submit">Search</button>
       </form>
@@ -49,17 +50,15 @@ export default function Search() {
       <div className="videos-list">
         {videos.map((video) => (
           <div key={video.id.videoId} className="video-item">
-            <a
-              href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={video.snippet.thumbnails.default.url}
-                alt={video.snippet.title}
-              />
-              <h3>{video.snippet.title}</h3>
-            </a>
+            <iframe
+              title={video.snippet.title}
+              width="380" 
+              height="200" 
+              src={`https://www.youtube.com/embed/${video.id.videoId}`}
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+            <h3>{video.snippet.title}</h3>
           </div>
         ))}
       </div>

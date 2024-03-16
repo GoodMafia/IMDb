@@ -18,6 +18,7 @@ import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import Search from './pages/Search/Search.jsx'
 import panelSearch from './img/search-3-xxl.png'
+import whiteProfile from './img/whiteProfile.png'
 import Error404 from './pages/Error404/Error404.jsx'
 
 
@@ -60,11 +61,10 @@ function App() {
 							{user ? (
 								<button onClick={() => signOutRender()} className='user-email'>{user.email}</button>
 							) : (
-								// Если пользователя нет, показываем ссылку на регистрацию
 								<NavLink to='/register'>
 									<img
 										className='profileLogo inPanel'
-										src={UserLogo}
+										src={whiteProfile}
 										alt='img'
 									/>
 								</NavLink>
@@ -114,7 +114,7 @@ function App() {
 							{user ? (
 								<button onClick={() => signOutRender()} className='user-email forAdaptive'>{user.email}</button>
 							) : (
-								// Если пользователя нет, показываем ссылку на регистрацию
+					
 								<NavLink className='forAdaptive' to='/register'>
 									<img className='profileLogo' src={UserLogo} alt='img' />
 								</NavLink>

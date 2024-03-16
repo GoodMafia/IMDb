@@ -1,11 +1,14 @@
 .parent1 {
   display: flex;
   justify-content: space-between;
-  gap: 0;
+  gap: 50px;
   margin: auto;
   flex-wrap: wrap;
+  align-items: center;
 }
-
+.centerBlock{
+  justify-content: center;
+}
 .preview-img {
   width: 262px;
   height: 368px;
@@ -52,7 +55,7 @@ main {
   background: rgba(235, 54, 54, 0.8);
   text-align: center;
   padding-top: 33px;
-  padding-bottom: 31px;
+  padding-bottom: 33px;
   color: white;
   transition: 0.5s;
 }
@@ -86,5 +89,31 @@ main {
   display: flex;
   
   position: absolute;
-  top: 0;
+  top: 66px;
+}
+
+.sliderBtn{
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sliderBtn:hover{
+  background-color: #ea4737;
+  color: white;
+}
+
+.nowPlayingText{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media(max-width: 500px){
+  .parent1{
+    gap: 10px;
+  }
 }

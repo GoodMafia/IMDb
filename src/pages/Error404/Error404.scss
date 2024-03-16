@@ -1,15 +1,32 @@
-.center{
-  text-align: center;
-  font-family: Inter;
-}
-.links{
+.error-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 30vh;
 }
 
-.LinksFromError{
-  color: blue;
-  font-family: Inter;
-  font-size: 20px;
+.error-message {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+}
+
+.error-link {
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #009688; /* Зеленый цвет */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.error-link:hover {
+  background-color: #00796b; /* Темный зеленый при наведении */
 }

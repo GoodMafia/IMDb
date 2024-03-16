@@ -114,14 +114,11 @@ a {
   margin-top: 40px;
 }
 
-.inPanel{
-  margin-left: 60px;
-  margin-top: 25px;
-}
+
 
 .search-icon{
   width: 60px;
-  margin-left: 65px;
+
   margin-top: 25px;
 
 }
@@ -137,6 +134,23 @@ a {
     color: white;
 
   }   
+}
+
+.leftPanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  padding: 20px;
+  background-color: #262222; 
+  overflow-y: auto;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.leftPanel.strictInvisible {
+  transform: translateX(-250px);
 }
 
 @media(max-width: 840px){
@@ -173,3 +187,5 @@ a {
     display: block;
   }
 }
+
+
